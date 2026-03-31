@@ -90,3 +90,7 @@ This is the place for you to write reflections:
 2. Rust's core principle is memory safety without a garbarge collector. Global mutable state such as standard static variable is basically dangerous in multi-thread environments because it might lead to data races easily.
 
 #### Reflection Subscriber-2
+
+1. I haven't explored things outside of the steps in the tutorial, because the tutorial already provides a clear, guided instruction. Exploring blindly for me would add unnecessary complexity and stress since I've just started learning this language.
+2. Observer pattern makes adding subscribers easy because each receiver registers independently via HTTP without modifying the publisher. Spawning more than one instance of Main app is harder since it requires consistency (shared state, synchronization)
+3. Although i don't enhance or create a new documentation for the API. It is really useful to check whether your API works well or not.
