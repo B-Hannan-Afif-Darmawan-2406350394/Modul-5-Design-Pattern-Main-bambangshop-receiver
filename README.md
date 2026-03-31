@@ -86,4 +86,7 @@ This is the place for you to write reflections:
 
 #### Reflection Subscriber-1
 
+1. Both are used to prevent data races (race condition). But mutex for both reading and writing, only one thread can look at it at a time. RwLock allows multiple thread to read the data simultaneously, although still restricts writing to one thread at a time.
+2. Rust's core principle is memory safety without a garbarge collector. Global mutable state such as standard static variable is basically dangerous in multi-thread environments because it might lead to data races easily.
+
 #### Reflection Subscriber-2
